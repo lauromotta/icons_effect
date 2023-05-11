@@ -1,0 +1,110 @@
+:root {
+  --largura: 50px;
+  --altura: 50px;
+  --fundo: black;
+  --borda: 5px solid #000;
+  --cor: red;
+  
+  --cor_blink: black;
+  --tamanho_icon: 40px;
+  --social_icons_size: 20px;
+  /* --cor_blink: #ff00de; */
+}
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  /* background-color: #707174; */
+}
+
+
+.social-icons a i {
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: var(--tamanho_icon);
+  height: var(--tamanho_icon);
+  border-radius: 50%;
+  /* color: #fff; */
+  color: rgba(0, 0, 0, 0);
+
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.social-icons a i {
+  font-size: var(--social_icons_size);
+  /* font-size: 20px; */
+}
+
+.social-icons a.facebook {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icons a.youtube {
+  background-color: #c4302b;
+}
+
+.social-icons a.whatsapp {
+  background-color: #44C454;
+}
+
+.social-icons a.github {
+  background-color: #000000;
+}
+
+.social-icons a.linkedin {
+  background-color: #0A66C2;
+}
+
+
+.social-icons a.instagram {
+  background: 
+  radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+  radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), 
+  radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+  radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), 
+  radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), 
+  radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), 
+  radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+  linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+}
+
+
+
+.social-icons a:hover i:before {
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--cor_blink), 0 0 70px var(--cor_blink), 0 0 80px var(--cor_blink), 0 0 100px var(--cor_blink);
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--glow-color), 0 0 40px var(--glow-color), 0 0 70px var(--glow-color), 0 0 80px var(--glow-color), 0 0 100px var(--glow-color), 0 0 150px var(--glow-color);
+  }
+}

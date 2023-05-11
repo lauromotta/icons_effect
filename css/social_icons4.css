@@ -1,0 +1,91 @@
+:root {
+    --color_facebook: #3b5998;
+    --color_twitter: #1da1f2;
+    --color_instagram: #c73883;
+    --color_youtube: #c4302b;
+    --color_whatsapp: #44c454;
+    --color_github: #000000;
+    --color_linkedin: #0a66c2;
+}
+
+.social-icons-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    margin: 15px 0;
+}
+
+.social-icons-4 ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons-4 li {
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.social-icons-4 li a {
+    text-decoration: none;
+}
+
+.social-icons-4 li i {
+    font-family: fontAwesome;
+    font-size: 24px;
+    color: #868383;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons-4 li:nth-child(1) i {
+    color: var(--color_facebook);
+}
+
+.social-icons-4 li:nth-child(2) i {
+    color: var(--color_twitter);
+}
+
+.social-icons-4 li:nth-child(3) i {
+    color: var(--color_instagram);
+}
+
+.social-icons-4 li:nth-child(4) i {
+    color: var(--color_youtube);
+}
+
+.social-icons-4 li:nth-child(5) i {
+    color: var(--color_whatsapp);
+}
+
+.social-icons-4 li:nth-child(6) i {
+    color: var(--color_github);
+}
+
+.social-icons-4 li:nth-child(7) i {
+    color: var(--color_linkedin);
+}
+
+.social-icons-4 li::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.social-icons-4 li:hover i {
+    color: #000000;
+}
+
+.social-icons-4 li:hover::before {
+    width: 100%;
+    top: 100%;
+    background-color: currentColor;
+}

@@ -1,0 +1,106 @@
+:root {
+    --color_facebook: #3b5998;
+    --color_twitter: #1da1f2;
+    --color_instagram: #c73883;
+    --color_youtube: #c4302b;
+    --color_whatsapp: #44c454;
+    --color_github: #000000;
+    --color_linkedin: #0a66c2;
+  }
+
+.social-icons-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    margin: 15px 0;
+}
+
+.social-icons-3 ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.social-icons-3 li {
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+
+
+.social-icons-3 ul li a {
+    text-decoration: none;
+}
+
+.social-icons-3 ul li a i {
+
+    font-size: 24px;
+    color: #868383;
+
+    
+}
+
+
+.social-icons-3 ul li::before{
+    font-family: fontAwesome;
+    position: absolute;
+    
+    top: 0px;
+    left: 0;
+    font-size: 24px;
+
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+
+}
+
+.social-icons-3 ul li:nth-child(1)::before{
+    content: '\f39e';
+    color: var(--color_facebook);
+    border-bottom: 2px solid var(--color_facebook);
+}
+
+.social-icons-3 ul li:nth-child(2)::before{
+    content: '\f099';
+    color: var(--color_twitter);
+    border-bottom: 2px solid var(--color_twitter);
+}
+
+.social-icons-3 ul li:nth-child(3)::before{
+    content: '\f16d';
+    color: var(--color_instagram);
+    border-bottom: 2px solid var(--color_instagram);
+}
+
+.social-icons-3 ul li:nth-child(4)::before{
+    content: '\f167';
+    color: var(--color_youtube);
+    border-bottom: 2px solid var(--color_youtube);
+}
+
+.social-icons-3 ul li:nth-child(5)::before{
+    content: '\f232';
+    color: var(--color_whatsapp);
+    border-bottom: 2px solid var(--color_whatsapp);
+}
+
+.social-icons-3 ul li:nth-child(6)::before{
+    content: '\f09b';
+    color: var(--color_github);
+    border-bottom: 2px solid var(--color_github);
+}
+
+.social-icons-3 ul li:nth-child(7)::before{
+    content: '\f0e1';
+    color: var(--color_linkedin);
+    border-bottom: 2px solid var(--color_linkedin);
+}
+
+.social-icons-3 ul li:hover::before{
+    height: 100%;
+}

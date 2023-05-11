@@ -1,0 +1,97 @@
+:root {
+
+    --tamanho_icon: 40px;
+}
+
+.social-icons-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.social-icons-2 a {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: var(--tamanho_icon);
+    height: var(--tamanho_icon);
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0);
+    background-color: #fdfdfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.social-icons-2 a i {
+    font-size: 24px;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.social-icons-2 a.facebook:hover  {
+    background-color: #3b5998;
+}
+.social-icons-2 a.facebook:hover i {
+    color: white;
+}
+
+.social-icons-2 a.twitter:hover  {
+    background-color: #1da1f2;
+}
+.social-icons-2 a.twitter:hover i {
+    color: white;
+}
+
+.social-icons-2 a.instagram:hover i {
+    color: white;
+}
+.social-icons-2 a.instagram:hover  {
+    background: 
+    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.social-icons-2 a.youtube:hover  {
+    background-color: #c4302b;
+}
+.social-icons-2 a.youtube:hover i {
+    color: white;
+}
+
+.social-icons-2 a.whatsapp:hover  {
+    background-color: #44c454;
+}
+.social-icons-2 a.whatsapp:hover i {
+    color: white;
+}
+
+.social-icons-2 a.github:hover  {
+    background-color: #000000;
+}
+.social-icons-2 a.github:hover i {
+    color: white;
+}
+
+.social-icons-2 a.linkedin:hover  {
+    background-color: #0a66c2;
+}
+.social-icons-2 a.linkedin:hover i {
+    color: white;
+}
+
+.social-icons-2 a:hover:before {
+    width: 100%;
+}
